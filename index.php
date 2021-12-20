@@ -26,7 +26,7 @@
      <?php
         foreach($items as $item) {
             ?>
-        <tr>
+        <tr> 
          <td><?= $item[0] ?></td>
          <td><?= $item[1] ?></td>
          <td><?= $item[2] ?></td>
@@ -36,6 +36,15 @@
         }
 ?>
  </table>
-
+<h2>Добавить новый товар</h2>
+<form action="vendor/create.php" method="post">
+        <p>Название</p>
+        <input type="text" name="title" >
+        <p>Описание</p>
+        <textarea name="description"></textarea>
+        <p>Цена</p>
+        <input type="number" name="price">
+        <button type="submit">Добавить</button>
+</form>
  </body>
  </html>
