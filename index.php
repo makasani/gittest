@@ -22,6 +22,7 @@
          <th>Название</th>
          <th>Описание</th>
          <th>Цена</th>
+         <th>&#9998;</th>
      </tr>
      <?php
         foreach($items as $item) {
@@ -31,6 +32,7 @@
          <td><?= $item[1] ?></td>
          <td><?= $item[2] ?></td>
          <td><?= $item[3] ?></td>
+         <td><a href="update.php?id=<?= $item[0] ?>">Изменить</a></td>
      </tr>
      <?php
         }
