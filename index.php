@@ -23,6 +23,7 @@
          <th>Описание</th>
          <th>Цена</th>
          <th>&#9998;</th>
+         <th>Delete</th>
      </tr>
      <?php
         foreach($items as $item) {
@@ -33,6 +34,8 @@
          <td><?= $item[2] ?></td>
          <td><?= $item[3] ?></td>
          <td><a href="update.php?id=<?= $item[0] ?>">Изменить</a></td>
+         <td><a href="vendor/delete.php?id=<?= $item[0] ?>">Delete</a></td>
+
      </tr>
      <?php
         }
